@@ -1,0 +1,374 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+footer {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Javanese Text",serif;
+    overflow-x: hidden;
+    background-color: #252D5E;
+   
+}
+
+/* Center navbar items and add spacing using Flexbox */
+.navbar-nav {
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.navbar-nav .nav-item {
+    margin: 0 15px; /* Adjust the value to increase or decrease spacing */
+}
+
+.navbar-brand img {
+
+    margin-top: 10px;
+    height: 70px; /* Adjust the height as needed */
+}
+.navbar-nav .nav-link {
+    color: #EABE67 !important;
+    font-family: "Javanese Text",serif;
+    font-size: larger;
+
+}
+.navbar-nav .nav-item .nav-link:hover {
+    color: #a77e0f !important; /* Replace with your desired hover color */
+}
+.navbar-nav .nav-item .nav-link:active{
+    
+    border-bottom: 2px solid #a77e0f; /* Replace with your desired border color */
+    
+}
+.navbar-toggler {
+    border:none !important; /* Remove default border */
+    background-color: transparent !important; /* Remove default background color */
+    padding: 0.25rem 0.5rem; /* Adjust padding as needed */
+  }
+.navbar-toggler-icon{
+    border: none;
+    background-image: url(/images/burger-list-menu-navigation-svgrepo-com.svg) !important;
+    
+}
+.navbar-toggler:active{
+    border: none;
+}
+
+.btn-main{
+    text-decoration: none;
+    font-family: "Javanese Text",serif;
+    padding: 10px;
+    padding-bottom: 5px;
+    text-align: center;
+    margin-top: -10px;
+    border: 2px solid #EABE67;
+    border-radius:10px ;
+    color:#EABE67;
+    background-color: transparent;
+    transition: 0.2s ease-in;
+   
+   
+    
+
+
+}
+.btn-main a{
+    text-decoration: none;
+    color:#EABE67;
+}
+.btn-main a:hover{
+    color: white;
+}
+.btn-main:hover,
+.btn-main:active{
+    color:white;
+    background-color: #a77e0f;
+    border: 2px solid #a77e0f;
+    
+}
+.main {
+    margin-top: 100px;
+    
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    
+    
+}
+.main p{
+    margin: 0px;
+}
+.my-name{
+    font-family: "Javanese Text",serif;
+    font-size: 20px;
+    color:#a77e0f;
+    
+    
+   
+  
+
+}
+.name{
+    font-size: 50px;
+    text-transform: capitalize;
+    color:#EABE67;
+
+}
+
+.name2{
+    font-size: 50px;
+    text-transform: capitalize;
+    color:#ecbf65b6;
+}
+.content{
+    font-size: 15px;
+    color:#a77e0f;
+
+}
+.btns{
+    margin-top: 30px;
+    
+}
+.btn1{
+    text-decoration: none;
+    padding : 10px 10px 5px 10px;
+    text-align: center;
+    margin-top: -10px;
+    border: 2px solid #EABE67;
+    border-radius:10px ;
+    color:#EABE67;
+    background-color: transparent;
+    transition: 0.2s ease-in;
+   
+
+}
+a .btn1 {
+    
+    color:#EABE67;
+}
+a .btn1 :hover{
+    color: white;
+}
+.btn2{
+    text-decoration: none;
+    margin: 30px;
+    padding : 10px 10px 5px 10px;
+    text-align: center;
+    margin-top: -10px;
+    border: 2px solid #EABE67;
+    border-radius:10px ;
+    color:#EABE67;
+    background-color: transparent;
+    transition: 0.2s ease-in;
+
+}
+a .btn2 {
+  
+    color:#EABE67;
+}
+a .btn2:hover{
+    color: white;
+}
+.btn1:hover,
+.btn1:active{
+    color:white;
+    background-color: #a77e0f;
+    border: 2px solid #a77e0f;
+    
+}
+.btn2:hover,
+.btn2:active{
+    color:white;
+    background-color: #a77e0f;
+    border: 2px solid #a77e0f;
+    
+}
+.about
+{
+    
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:70px 0px 0px 0px;
+    background-color: #EABE67;
+    color:#252D5E
+    
+}
+.about h1{
+  
+    padding:50px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.about p{
+    
+    text-align: center;
+    padding:50px;
+    padding-top: 0px;
+    line-height: 2.5;
+    font-size: large;
+
+}
+
+.card-btn
+{
+    padding : 10px 10px 5px 10px;
+    text-align: center;
+    margin-top: -10px;
+    border: 2px solid #EABE67;
+    border-radius:10px ;
+    color:#EABE67;
+    background-color: transparent;
+    transition: 0.2s ease-in;
+}
+.card-btn:hover,
+.card-btn:active{
+    color:white;
+    background-color: #a77e0f;
+    border: 2px solid #a77e0f;
+    
+}
+ .card  {
+    background: transparent;
+    border:solid 2px #EABE67 ;
+    border-radius: 20px;
+}
+ .card img{
+    
+    height: 200px;
+    background: transparent;
+    border:transparent #EABE67 ;
+    border-radius: 20px;
+    border-bottom: 2px solid #EABE67;
+    object-fit: cover;
+}
+.card p{
+    color: #EABE67;
+}
+.Portfolio{
+    display: flex;
+    justify-content: center;
+    color: #EABE67;
+}
+.Portfolio-box{
+    margin-top: 100px;
+}
+.contact{
+    border: 2px solid #EABE67;
+    margin: 100px 0px 0px 0px;
+    padding: 100px 0px 100px 0px ;
+    background-color: #EABE67;
+}
+.sec1{
+   background-color: transparent;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   justify-items: center;
+   align-items: center;
+   color:#252D5E;
+}
+.sec2{
+    display: flex;
+    justify-content: center;
+}
+
+.sec2 label{
+    background-color: transparent !important;
+}
+.sec2 textarea{
+    border: 2px solid #252D5E;
+    border-radius: 30px;
+    background-color: transparent !important;
+    padding: 10px;
+   
+}
+.form-group input{
+    border: 2px solid #252D5E;
+    border-radius: 30px;
+    background-color: transparent !important;
+    padding: 10px;
+}
+.form-group {
+    color:#252D5E;
+}
+.form-group button{
+
+    text-decoration: none !important;
+    padding : 10px 10px 5px 10px;
+    text-align: center;
+    margin-top: -10px;
+    border: 2px solid #252D5E;
+    border-radius:10px ;
+    text-decoration-color: #252D5E;
+    background-color: transparent;
+}
+.form-group .form-btn{
+    text-decoration: none;
+    color: #252D5E;
+    transition: 0.2S ease-in;
+}
+.form-group .form-btn:hover{
+    color:white;
+}
+.form-group button:hover{
+  
+    background-color: #252D5E;
+    border: 2px solid #252D5E;
+}
+.foot{
+    margin-bottom: 0px;
+    padding: 0px;
+    width: 100%;
+    padding: 20px 0px 20px 0px;
+    
+    background-color: rgb(58, 54, 54);
+}
+.footer{
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   padding-left:50%;
+   padding-right: 50%;
+   
+
+}
+.footer .link{
+    margin:10px;
+}
+
+.link i{
+    font-size: 24px;
+    color: white;
+}
+.link i:hover{
+    color: rgb(165, 165, 165);
+}
+.nm{
+    
+    
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.copy
+{
+    color: white;
+    display:flex;
+    justify-content: center;
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css" />
+
+    <link rel="stylesheet" href="css/style.css">
+    
+
+</head>
+<body>
+    <div class="container"id="logo">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <a class="navbar-brand" href="#logo">
+                <img src="images/logo w-o name.png" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li>
+                        <button class="btn-main " type="button"><a href="/resources/MUBASHIR SAEED resume.pdf">My Resume</a></button>
+                    </li>
+                </ul>
+                
+            </div>
+            
+    
+        </nav>
+    </div>
+    <main class="container main">
+       <div> <p class="my-name">Hi my name is </p></div>
+        <p class="name">mubashir saeed</p>
+        <p class="name2">Im a web developer </p>
+        <p class="content">Im a web developer specializing in building front-ends using several web tecnologies <br>
+        i have also some experience in building websites using .NET technologies</p>
+        <div class="btns">
+            <a href="#contact"><buttton class="btn1 " type="button" >Contuct</buttton></a>
+            <a href="/resources/MUBASHIR SAEED resume.pdf"> <buttton class="btn2 " type="button">My Resume</buttton></a>
+        </div>
+    </main>
+    <section class="container-fluid about "id="about">
+        <h1>About</h1>
+        <div class="container ">
+            <p>Lorem ipsum dolor, sit amet 
+                consectetur adipisicing elit. Ab, tempora porro. Consequuntur vero voluptas
+                 aliquam placeat suscipit animi recusandae cum expedita ipsum blanditiis, quos, 
+                 maxime natus! Officiis possimus molestias, fugit voluptatibus consectetur ipsum 
+                 voluptate perspiciatis nam laborum sequi repellat minus natus iusto. Culpa ad 
+                 perferendis est adipisci deleniti beatae. Porro sit sed facilis, quam expedita, qui qui
+                 dem voluptatum veniam nostrum aspernatur dignissimos recusandae nihil beatae magni esse error doloru
+            </p>
+    
+        </div>
+    </section>
+    <section id="portfolio">
+        <div class=" container Portfolio-box "> 
+            <h1 class="mt-5 Portfolio">Portfolio</h1>
+        <div class="row ">
+            <div class="col-lg-4 col-md-6 col-12 mt-5">
+                <div class="card" >
+                    <div class="img-hold"><img class="card-img-top" src="/images/pro-1.png" alt="Card image cap"></div>
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make 
+                        up the bulk of the card's content.</p>
+                        <button class="card-btn">view</button>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mt-5">
+                <div class="card" >
+                    <div class="img-hold"><img class="card-img-top" src="/images/project-logo.webp" alt="Card image cap"></div>
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to b
+                        uild on the card title and make up the bulk of the card's content.</p>
+                        <button class="card-btn">view</button>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12  mt-5">
+                <div class="card" >
+                    <div class="img-hold"><img class="card-img-top" src="/images/project-logo.webp" alt="Card image cap"></div>
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up 
+                        the bulk of the card's content.</p>
+                        <button class="card-btn">view</button>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mt-5">
+                <div class="card">
+                    <div class="img-hold"><img class="card-img-top" src="/images/project-logo.webp" alt="Card image cap"></div>
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <button class="card-btn">view</button>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    </section>
+   
+    <section class=" container-fluid contact  " id="contact">
+        <div class="row mt-5">
+            <div class="col-12 col-lg-6 col-md-6 sec1 pb-5"><h1>contact</h1></div>
+            <div class="col-12 col-lg-6 col-md-6">
+                <div class="sec2 "> 
+                    <form id="contactForm" action="process_form.php" method="POST">
+                        <div class="form-group">
+                          <label for="name">Name:</label>
+                          <input type="text" id="name" name="name" required>
+                        </div>
+                    
+                        <div class="form-group">
+                          <label for="email">Email:</label>
+                          <input type="email" id="email" name="email" required>
+                        </div>
+                    
+                        <div class="form-group">
+                          <label for="message">Message:</label>
+                          <textarea id="message" name="message" required></textarea>
+                        </div>
+                    
+                        <div class="form-group  ">
+                          <button type="submit" class="form-btn">Submit</button>
+                        </div>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <footer class=" foot">
+            <a href="#logo"><div class="container-fluid nm pb-4 mt-5"><img src="/images/logo_svg.svg" alt=""></div></a>
+            <div class=" footer ">
+                <div class="col-3 link "><a href="https://www.facebook.com/mubashir.saeed.3910"><i class="lni lni-facebook-original "></i></a></div>
+                <div class="col-3 link"><a href="https://www.instagram.com/m.mubashirsaeed/"><i class="lni lni-instagram-original"></i></a></div>
+                <div class="col-3 link"><a href="https://www.linkedin.com/in/mubashir-saeed-38591824b/"><i class="lni lni-linkedin-original"></i> </a></div>
+                 <div class="col-3 link"><a href="https://github.com/MubasShirSaeed"><i class="lni lni-github-original"></i></a></div>
+            </div>
+            <div class="container"> 
+                   <p class="copy mt-2">© 2024 Mubashir Saeed</p>
+            </div>
+        </footer>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
