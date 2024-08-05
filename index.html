@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css" />
 
     <link rel="stylesheet" href="css/style.css">
@@ -28,7 +29,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#portfolio">Portfolio</a>
                     </li>
-                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
@@ -116,7 +119,32 @@
         </div>
     </div>
     </section>
-   
+   <section id="skills">
+    <div class="container-fluid skill">
+        <h1>Skills </h1>
+        <div class="container-fluid">
+            <!-- Slider main container -->
+        <div class="swiper container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img class="img-h" src="images/html.png" alt=""></div>
+          <div class="swiper-slide"><img class="img-h" src="images/css.png" alt=""></div>
+          <div class="swiper-slide"><img class="img-h" src="images/javascript.png" alt=""></div>
+          <div class="swiper-slide"><img class="img-h" src="images/bootstrap.png" alt=""></div>
+          <div class="swiper-slide"><img class="img-h" src="images/c++.png" alt=""></div>
+          <div class="swiper-slide"><img class="img-h" src="images/sql.png" alt=""></div>
+       
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      
+        <!-- If we need navigation buttons -->
+        <div class=" swiper-button swiper-button-prev"></div>
+        <div class="swiper-button swiper-button-next"></div>
+        </div>
+    </div>
+   </section>
     <section class=" container-fluid contact  " id="contact">
         <div class="row mt-5">
             <div class="col-12 col-lg-6 col-md-6 sec1 pb-5"><h1>contact</h1></div>

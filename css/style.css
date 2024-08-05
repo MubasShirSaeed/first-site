@@ -372,3 +372,40 @@ a .btn2:hover{
     display:flex;
     justify-content: center;
 }
+.skill{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.skill h1{
+    margin: 100px 0px 0px 0px;
+    color: #EABE67;
+}
+.swiper-slide{
+    width:30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+
+}
+.swiper-slide .img-h{
+    width:200px;
+    height: 200px;
+    object-fit:cover;
+}
+.swiper-button{
+    color:#EABE67;
+   
+}
+.swiper-pagination-bullet{
+    background-color: #EABE67;
+    
+}
+@media (max-width: 767px) {
+    .swiper-button-prev,
+    .swiper-button-next {
+      display: none;
+    }
+}
