@@ -52,10 +52,11 @@ body{
     border:none !important; /* Remove default border */
     background-color: transparent !important; /* Remove default background color */
     padding: 0.25rem 0.5rem; /* Adjust padding as needed */
+    
   }
 .navbar-toggler-icon{
-    border: none;
-    background-image: url(/images/burger-list-menu-navigation-svgrepo-com.svg) !important;
+  
+    background-image: url(../images/burger-list-menu-navigation-svgrepo-com.svg) !important;
     
 }
 .navbar-toggler:active{
