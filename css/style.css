@@ -81,15 +81,9 @@ body{
 
 
 }
-.btn-main a{
-    text-decoration: none;
-    color:#EABE67;
-}
-.btn-main a:hover{
-    color: white;
-}
-.btn-main:hover,
-.btn-main:active{
+
+.btn-main:hover
+{
     color:white;
     background-color: #a77e0f;
     border: 2px solid #a77e0f;
@@ -140,8 +134,10 @@ body{
     margin-top: 30px;
     
 }
-.btn1{
+.btns a{
     text-decoration: none;
+}
+.btn1,.btn2{
     padding : 10px 10px 5px 10px;
     text-align: center;
     margin-top: -10px;
@@ -153,42 +149,11 @@ body{
    
 
 }
-a .btn1 {
-    
-    color:#EABE67;
-}
-a .btn1 :hover{
-    color: white;
-}
 .btn2{
-    text-decoration: none;
     margin: 30px;
-    padding : 10px 10px 5px 10px;
-    text-align: center;
-    margin-top: -10px;
-    border: 2px solid #EABE67;
-    border-radius:10px ;
-    color:#EABE67;
-    background-color: transparent;
-    transition: 0.2s ease-in;
+}
 
-}
-a .btn2 {
-  
-    color:#EABE67;
-}
-a .btn2:hover{
-    color: white;
-}
-.btn1:hover,
-.btn1:active{
-    color:white;
-    background-color: #a77e0f;
-    border: 2px solid #a77e0f;
-    
-}
-.btn2:hover,
-.btn2:active{
+.btn1:hover,.btn2:hover{
     color:white;
     background-color: #a77e0f;
     border: 2px solid #a77e0f;
