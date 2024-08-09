@@ -1,48 +1,47 @@
 <?php
-// Check if the form is submitted
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+// Include PHPMailer autoloader
+require 'vendor/autoload.php';
+
+// Check if form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    
-    // Collect form data
+    // Retrieve form data
     $name = $_POST['name'];
     $email = $_POST['email'];
     $message = $_POST['message'];
-    
-    // Validate email
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        // Invalid email format
-        http_response_code(400);
-        echo "Invalid email format";
-        exit;
+
+    // Initialize PHPMailer
+    $mail = new PHPMailer(true);
+
+    try {
+        // Server settings
+        $mail->isSMTP();
+        $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
+                                                    // Send using SMTP
+        $mail->Host       = 'smtp.gmail.com';                      // Set the SMTP server to send through
+        $mail->Username   = 'mubashi03077072161@gmail.com';               // SMTP username
+        $mail->Password   = 'flcv libz ubdc abcy';                        // SMTP password
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
+        $mail->Port       = 587;                                    // TCP port to connect to
+
+        // Sender
+        $mail->setFrom($email, $name);                              // Sender's email address and name
+
+        // Recipients
+        $mail->addAddress('mubashi03077072161@gmail.com', 'Recipient Name'); // Add a recipient
+
+        // Content
+        $mail->isHTML(false);                                      // Set email format to plain text
+        $mail->Subject = 'New Contact Form Submission';
+        $mail->Body    = "Name: $name\nEmail: $email\nMessage:\n$message";
+
+        // Send email
+        $mail->send();
+        echo 'Message has been sent';
+    } catch (Exception $e) {
+        echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     }
-    
-    // Email recipient (change this to your email address)
-    $to = "mubashi03077072161@gmail.com";
-    
-    // Email subject
-    $subject = "New Message from $name";
-    
-    // Email message
-    $email_message = "Name: $name\n";
-    $email_message .= "Email: $email\n";
-    $email_message .= "Message:\n$message\n";
-    
-    // Headers
-    $headers = "From: $email\r\n";
-    $headers .= "Reply-To: $email\r\n";
-    
-    // Send email
-    if (mail($to, $subject, $email_message, $headers)) {
-        // Email sent successfully
-        echo "Thank you! Your message has been sent.";
-    } else {
-        // Error sending email
-        http_response_code(500);
-        echo "Oops! Something went wrong and we couldn't send your message.";
-    }
-    
-} else {
-    // Not a POST request, handle error
-    http_response_code(403);
-    echo "There was a problem with your submission, please try again.";
 }
 ?>
