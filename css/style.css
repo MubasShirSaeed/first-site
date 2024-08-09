@@ -12,7 +12,11 @@ footer {
 body{
     font-family: "Javanese Text",serif;
     overflow-x: hidden;
-    background-color: #252D5E;
+    background-image: linear-gradient(to right, #252D5E , #040b33);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top left;
+    background-size: 100% auto;
    
 }
 
@@ -167,7 +171,7 @@ body{
     flex-direction: column;
     justify-content: center;
     margin:70px 0px 0px 0px;
-    background-color: #EABE67;
+    background-image: radial-gradient( circle, #EABE67 50%, #946527);
     color:#252D5E
     
 }
@@ -230,12 +234,12 @@ body{
 }
 .Portfolio-box{
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 .contact{
-    border: 2px solid #EABE67;
-    margin: 100px 0px 0px 0px;
+   
     padding: 100px 0px 100px 0px ;
-    background-color: #EABE67;
+    background-image: radial-gradient( circle, #EABE67 50%, #946527);
 }
 .sec1{
    background-color: transparent;
@@ -342,7 +346,8 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
+    padding-bottom: 100px;
 }
 .skill h1{
     margin: 100px 0px 0px 0px;
